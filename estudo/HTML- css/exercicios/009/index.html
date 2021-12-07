@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>Codigo em C: </p>
+    <pre>
+        <code>
+            #include <stdio.h>
+
+                int base_expo(int ba, int ex);
+                
+                int main ()
+                {
+                    int base, expo;
+                
+                    printf("Digite o valor da base: ");
+                    scanf("%d", &base);
+                    printf("\nDigite o valor do expoente: ");
+                    scanf("%d", &expo);
+                    printf("\nO valor da operacao %d elevado a %d e': %d\n",base, expo, base_expo(base,expo));
+                
+                    return 0;
+                }
+                int base_expo(int ba, int ex)
+                {
+                    int res = 1;
+                
+                    for(int i = 0; i < ex; i++)
+                        res *= ba;
+                    return res;
+                }
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p><q>Como diria uma pai de um amigo: O computador é um burro muito rápido</q></p>
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, em seu livro de HTML, para leigos</p>
+    <blockquote>A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.</blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hypper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr> estou adorando</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio blanditiis corrupti fugiat ipsam laudantium quae, sequi laborum aperiam! Aspernatur id atque omnis porro earum ullam accusantium deleniti nostrum provident magnam?</bdo></p>
+</body>
+</html>
